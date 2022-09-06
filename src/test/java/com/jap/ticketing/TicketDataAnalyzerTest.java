@@ -26,8 +26,7 @@ public class TicketDataAnalyzerTest  {
         ticketDataAnalyzer.readFile(fileName);
     }
     @Test
-    public void givenTicketDetailsFileReturnTheNUmberOfTicketRecordObjects() throws ParseException {
-        //SalesRecord expected = new SalesRecord("20/11/18",37077,505,"credit",49.53,12,8);
+    public void givenTicketDetailsFileReturnTheNUmberOfTicketRecordObjects() {
         List<Ticket> output = ticketDataAnalyzer.readFile(fileName);
         assertEquals("Sales record objects not returned correctly",49,output.size());
 
